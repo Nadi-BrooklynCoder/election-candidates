@@ -43,8 +43,4 @@ h2 {
   }
 }
 
-@media screen and (max-width: 980px) {
-  nav {
-    width: 156vw;
-  }
-}
+
