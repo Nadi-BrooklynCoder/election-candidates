@@ -22,7 +22,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 100vw;
     height: 10%;
 }
 
@@ -31,15 +31,20 @@ h2 {
     margin-left: 100px;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 741px) {
   nav {
-    width: 800px;
+    width: 150vw;
   }
+}
 
-  html,
-  body,
-  #root
-   {
-    background-color: #E7BF7A;
+@media screen and (max-width: 530px) {
+  nav {
+    width: 150vw;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    width: 156vw;
   }
 }
