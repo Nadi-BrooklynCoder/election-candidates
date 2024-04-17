@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 100px;
+    width: 75vw;
+   
+   
   }
   
   .card {
@@ -9,9 +12,17 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    width: 125%;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
+    margin-left: 90px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
   }
   
   #profileImg {
