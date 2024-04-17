@@ -3,8 +3,6 @@
     grid-template-columns: repeat(4, auto);
     gap: 100px;
     width: 75vw;
-   
-   
   }
   
   .card {
@@ -28,5 +26,11 @@
   #profileImg {
     width: 100%;
     height: auto;
+  }
+
+  @media screen and (max-width: 512px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   
