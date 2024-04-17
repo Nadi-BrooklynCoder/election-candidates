@@ -1,9 +1,22 @@
-import React from 'react'
+import React from 'react';
+import profileImg from '../assets/person.jpg';
+import './card.css'
 
-const Card = () => {
+const Card = ({ candidateNames }) => {
   return (
-    <div>Card</div>
+    <div className='container'>
+      {candidateNames.map((candidate, i) => {
+        return (
+          <div className='card' key={i}>
+            <img src={profileImg} alt="Candidate" id="profileImg"/>
+            <p className='name'> {candidate} </p>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
-export default Card
+export default Card;
+
+
