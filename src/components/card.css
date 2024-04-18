@@ -1,22 +1,27 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 100px;
-    width: 75vw;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    row-gap:  10px;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
+
+ 
   
   .card {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     text-align: center;
-    width: 100%;
+    width: 50%;
     background-color: white;
     border-radius: 10px;
-    margin-left: 90px;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
     cursor: pointer;
+    margin-top: 0;
   }
 
   .card:hover {
@@ -26,7 +31,10 @@
   #profileImg {
     width: 100%;
     height: auto;
+    padding: 0 auto;
   }
+
+ 
 
   @media screen and (max-width: 741px) {
     .container {

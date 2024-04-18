@@ -16,8 +16,9 @@ const List = () => {
 
   return (
     <div>
-      <h2>People</h2>
+      <div className="containerCard">
       <Card  candidateNames={candidateNames}/>
+      </div>
     </div>
   )
 }
